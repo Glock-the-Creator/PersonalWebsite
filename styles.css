@@ -74,11 +74,11 @@ body {
 }
 
 .thumb {
-  width: 96px;
-  height: 18px;
-  background: #2b2f36;
+  width: 120px;
+  height: 60px;
+  border-radius: 4px;
   border: 1px solid #6b6f76;
-  border-radius: 3px;
+  object-fit: cover;
 }
 
 /* Footer */
