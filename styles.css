@@ -1,6 +1,5 @@
-/* ===== Mason Glocksine — Portfolio (CSS Grid) ===== */
+/* ===== Mason Glocksine's Portfolio CSS GRID ===== */
 
-/* Base reset */
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; }
 :root{
@@ -14,7 +13,7 @@ html,body{ margin:0; padding:0; }
   --radius:14px;
 }
 
-/* Page-level GRID (overall structure) */
+
 .page{
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   line-height:1.55;
@@ -90,7 +89,7 @@ html,body{ margin:0; padding:0; }
   transition:transform .25s ease, opacity .2s ease;
 }
 
-/* Inline links */
+/* Inline */
 .nav-links{
   border:1px solid var(--stroke);
   border-radius:12px;
@@ -103,7 +102,7 @@ html,body{ margin:0; padding:0; }
 }
 .nav-links a:hover,.nav-links a:focus{ border-color:var(--stroke); background:var(--panel); }
 
-/* Main content GRID */
+/* Main content*/
 .content{
   padding:28px 0 52px;
   display:grid;
@@ -117,14 +116,14 @@ html,body{ margin:0; padding:0; }
   border:1px solid var(--stroke);
   border-radius:var(--radius);
   padding:18px 20px;
-  grid-column: span 6; /* two-up layout on wide screens */
+  grid-column: span 6; 
 }
 .card h2{ margin:0 0 8px; font-size:1.25rem; }
 
-/* About across full width for rhythm */
+/*full width*/
 #about{ grid-column: 1 / -1; }
 
-/* Projects image */
+/*image*/
 .project-strip{ display:block; margin-top:12px; }
 .thumb{
   display:block; margin:12px auto;
@@ -142,7 +141,7 @@ html,body{ margin:0; padding:0; }
 }
 .footer a{ color:var(--accent); }
 
-/* Visually-hidden helper (for figcaption etc.) */
+
 .visually-hidden{
   position:absolute !important;
   width:1px; height:1px;
@@ -153,24 +152,23 @@ html,body{ margin:0; padding:0; }
 
 /* --------- Responsive ---------- */
 
-/* Stack cards at tablet sizes */
+/* Stack cards*/
 @media (max-width: 900px){
   .card{ grid-column: 1 / -1; }
 }
 
-/* Small: <500px — compact spacing + hamburger menu */
 @media (max-width: 500px){
   .nav{ grid-template-columns:auto; }
   .hamburger{ display:grid; }
   .nav-links{
     position:relative;
     display:grid;
-    grid-template-rows:0fr;  /* collapsed */
+    grid-template-rows:0fr;
     overflow:hidden;
     gap:0; padding:0; margin-top:8px;
   }
   #menu-toggle:checked + .hamburger + .nav-links{
-    grid-template-rows:1fr;  /* expand */
+    grid-template-rows:1fr;
     padding:6px;
   }
   .nav-links a{ padding:10px 12px; border-radius:8px; }
