@@ -2,72 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mason Glocksine — Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <!-- Top -->
+<body class="page">
+  <!-- Skip link (a11y) -->
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
   <header class="site-header">
-    <nav class="nav container">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#blogs">Blogs</a>
+    <nav class="nav container" aria-label="Primary">
+      <!-- Hamburger (no JS) -->
+      <input id="menu-toggle" type="checkbox" aria-hidden="true" />
+      <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div id="nav-links" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#blogs">Blogs</a>
+      </div>
     </nav>
   </header>
 
-  <main class="container content">
-    <!-- About -->
+  <!-- Main content laid out with CSS Grid -->
+  <main id="main" class="content container" role="main">
     <section id="about" class="card">
-      <h2>About me:</h2>
+      <h2>About me</h2>
       <p>
-        Hi, my name is Mason Glocksine, and I am a 3rd‑year CIS major at SVSU.
+        Hi, my name is Mason Glocksine, and I am a 3rd-year CIS major at SVSU.
         I have two dogs (Daisy and Sophie), a younger brother and older sister,
-        making me the middle child, and both of my parents are teachers.
+        and both of my parents are teachers.
       </p>
     </section>
 
-    <!-- Education -->
     <section id="education" class="card">
-      <h2>Education:</h2>
-      <p>
-        I have a high school diploma and am working on my bachelor's degree in
-        CIS (3rd year).
-      </p>
+      <h2>Education</h2>
+      <p>I have a high school diploma and am working on my bachelor's degree in CIS (3rd year).</p>
     </section>
 
-    <!-- Projects -->
     <section id="projects" class="card">
-      <h2>Projects:</h2>
+      <h2>Projects</h2>
       <p>
-        During the summer, I have built many iterations of a Spotify‑style music
-        player in VB and C#, called <em>Musaic</em> and <em>Bar</em>.
+        Over the summer I built several iterations of a Spotify-style music player in VB and C#,
+        called <em>Musaic</em> and <em>Bar</em>.
       </p>
-<div class="project-strip">
-  <img src="Screenshot 2025-10-05 094639.png" alt="Musaic UI" class="thumb">
-</div>
+      <figure class="project-strip">
+        <img src="Screenshot 2025-10-05 094639.png" alt="Musaic UI screenshot" class="thumb" />
+        <figcaption class="visually-hidden">Screenshot from the Musaic music player.</figcaption>
+      </figure>
     </section>
 
-    <!-- Experience -->
     <section id="experience" class="card">
-      <h2>Experience:</h2>
+      <h2>Experience</h2>
       <p>
-        I am currently employed at SAMSA Inc. as an IT tech and have
-        participated in FIRST Robotics in high school.
+        Currently employed at SAMSA Inc. as an IT tech. I also participated in FIRST Robotics in high school.
       </p>
     </section>
 
-    <!-- Blogs -->
     <section id="blogs" class="card">
-      <h2>Blogs:</h2>
-      <p>No blogs yet… :)</p>
+      <h2>Blogs</h2>
+      <p>No posts yet.</p>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="container footer">
+  <footer class="footer container">
     <small>
       Instagram: <a href="https://www.instagram.com/mglock_15/" target="_blank" rel="noopener">mglock_15</a>
     </small>
