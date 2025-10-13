@@ -30,15 +30,29 @@ html,body{ margin:0; padding:0; }
 /* Containers */
 .container{ width:min(1000px,92vw); margin-inline:auto; }
 
-/* Skip link */
-.skip{
-  position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
-.skip:focus{
-  position:static; width:auto; height:auto;
-  padding:.5rem .75rem; background:#0f172a;
-  border:1px solid var(--stroke); border-radius:8px;
+
+.skip:focus {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  background: #0f172a;
+  border: 1px solid var(--stroke);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 8px;
+  z-index: 100;
 }
+
 
 /* Header */
 .site-header{
@@ -55,12 +69,18 @@ html,body{ margin:0; padding:0; }
   padding:12px 0;
 }
 
-/* Hamburger (no JS) */
-#menu-toggle{
-  position:absolute;
-  left:-9999px; /* fully hide the checkbox */
-  appearance:none; -webkit-appearance:none; -moz-appearance:none;
+#menu-toggle {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
+
 .hamburger{
   width:42px; height:36px; display:none; place-items:center; cursor:pointer;
   border:1px solid var(--stroke); border-radius:10px; padding:6px;
