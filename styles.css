@@ -22,7 +22,7 @@ html,body{margin:0;padding:0}
   color:var(--text);
   background:
     radial-gradient(1100px 700px at 50% 0%, rgba(255,255,255,.9) 0%, rgba(255,255,255,0) 65%) no-repeat,
-    linear-gradient(180deg, #ffffff 0%, var(--bg) 40%, var(--bg-accent) 100%) no-repeat;
+    linear-gradient(180deg, #ffffff 0%, #e9f6ff 100%) no-repeat !important;
   display:grid;
   grid-template-rows:auto 1fr auto;
   min-height:100svh;
