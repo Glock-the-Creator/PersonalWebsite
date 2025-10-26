@@ -13,6 +13,7 @@
   <!-- Header-->
   <header class="site-header">
     <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#about" aria-label="Home">Mason<span>Glocksine</span></a>
 
       <input id="menu-toggle" type="checkbox" aria-hidden="true" />
       <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">
@@ -31,42 +32,165 @@
 
   <!-- Main content -->
   <main id="main" class="content container" role="main">
+
+    <!-- HERO / ABOUT -->
     <section id="about" class="card">
-      <h2>About me</h2>
-      <p>
-        Hi, my name is Mason Glocksine, and I am a 3rd-year CIS major at SVSU.
-        I have two dogs (Daisy and Sophie), a younger brother and older sister,
-        and both of my parents are teachers.
+      <h1 class="title">Hey, I’m Mason.</h1>
+      <p class="lead">
+        A third-year CIS student at SVSU focused on modern desktop apps, clean UI, and practical tooling.
+        I love building delightful experiences—recently deep into WPF, .NET, and device integration.
       </p>
+      <div class="columns">
+        <p>
+          Beyond code, I’m a dog dad (Daisy &amp; Sophie), middle sibling, and lifelong tinkerer. I value
+          accessibility, performance, and crafting interfaces that feel intuitive from the first click.
+        </p>
+        <p>
+          On campus and at work, I gravitate toward projects with measurable impact: faster workflows,
+          clearer visuals, and fewer clicks. I’m currently iterating on media players, weather dashboards,
+          and photo utilities.
+        </p>
+      </div>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education" class="card">
       <h2>Education</h2>
-      <p>I have a high school diploma and am working on my bachelor's degree in CIS (3rd year).</p>
+      <ul class="list">
+        <li><strong>Saginaw Valley State University</strong> — B.S. in Computer Information Systems (Year 3)</li>
+        <li>Relevant coursework: Data Structures, OOP in C#/.NET, DB Systems, HCI, Networks</li>
+        <li>Clubs &amp; activities: FIRST Robotics alum, dev meetups, peer code reviews</li>
+      </ul>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="card">
       <h2>Projects</h2>
-      <p>
-        Over the summer I built several iterations of a Spotify-style music player in VB and C#,
-        called <em>Musaic</em> and <em>Bar</em>.
-      </p>
-      <figure class="project-strip">
-        <img src="Screenshot 2025-10-05 094639.png" alt="Musaic UI screenshot" class="thumb" />
-        <figcaption class="visually-hidden">Screenshot from the Musaic music player.</figcaption>
-      </figure>
+
+      <article class="project">
+        <figure class="project-media">
+          <img src="Screenshot 2025-10-05 094639.png" alt="Musaic UI preview" />
+        </figure>
+        <div class="project-body">
+          <h3>Musaic / Bar</h3>
+          <p>
+            A Spotify-style desktop player built in VB and C# with LibVLCSharp and yt-dlp integration.
+            Focus on buttery UI, instant previews, and resilient downloads.
+          </p>
+          <ul class="tags">
+            <li>.NET</li><li>WPF</li><li>LibVLC</li><li>yt-dlp</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="project-media">
+          <img src="assets/photo-friendly.png" alt="Photo Friendly app concept" />
+        </figure>
+        <div class="project-body">
+          <h3>Photo Friendly</h3>
+          <p>
+            A Windows utility for importing, deduping, and organizing iPhone photos into date-based
+            folders with optional HEIC→JPEG conversion and reconciliation logs.
+          </p>
+          <ul class="tags">
+            <li>C#</li><li>WinUI/WPF</li><li>ImageMagick</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="project-media">
+          <img src="assets/bay-county-weather.png" alt="Bay County Weather web app preview" />
+        </figure>
+        <div class="project-body">
+          <h3>Bay County Weather</h3>
+          <p>
+            Responsive web app with live radar, hourly &amp; 7-day forecasts, and dynamic backgrounds.
+            Built for fast glanceability and local relevance.
+          </p>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JS</li>
+          </ul>
+        </div>
+      </article>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience" class="card">
       <h2>Experience</h2>
-      <p>
-        Currently employed at SAMSA Inc. as an IT tech. I also participated in FIRST Robotics in high school.
-      </p>
+      <div class="timeline">
+        <div class="time-row">
+          <div class="time-when">2025 — Present</div>
+          <div class="time-body">
+            <h3>SAMSA Inc. — IT Tech</h3>
+            <p>
+              Support, troubleshooting, and small internal tools. Emphasis on pragmatic fixes and
+              quality-of-life scripting. <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em>
+            </p>
+          </div>
+        </div>
+        <div class="time-row">
+          <div class="time-when">2019 — 2022</div>
+          <div class="time-body">
+            <h3>FIRST Robotics — Team Member</h3>
+            <p>
+              Electrical &amp; programming subteams; rapid prototyping and collaborative problem-solving.
+              <em>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- BLOGS -->
     <section id="blogs" class="card">
       <h2>Blogs</h2>
-      <p>No posts yet.</p>
+
+      <div class="blog-list">
+        <article class="blog">
+          <figure class="blog-media">
+            <img src="assets/blog-1.jpg" alt="Abstract UI shapes" />
+          </figure>
+          <div class="blog-content">
+            <h3>Designing for Feel: Micro-interactions in WPF</h3>
+            <p>
+              Micro-interactions turn good apps into great ones—hover states, progress shimmer,
+              and subtle easing curves. <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor.</em>
+            </p>
+            <a class="button" href="#">Read more</a>
+          </div>
+        </article>
+
+        <article class="blog">
+          <figure class="blog-media">
+            <img src="assets/blog-2.jpg" alt="Code editor screenshot" />
+          </figure>
+          <div class="blog-content">
+            <h3>Streaming Audio: LibVLC + yt-dlp Tips</h3>
+            <p>
+              From fast previews to stable downloads: connection handling, caching, and smart UI
+              fallbacks. <em>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</em>
+            </p>
+            <a class="button" href="#">Read more</a>
+          </div>
+        </article>
+
+        <article class="blog">
+          <figure class="blog-media">
+            <img src="assets/blog-3.jpg" alt="Weather radar visualization" />
+          </figure>
+          <div class="blog-content">
+            <h3>Weather at a Glance: Visual Hierarchy</h3>
+            <p>
+              Making hourly forecasts scannable with contrast, spacing, and iconography.
+              <em>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</em>
+            </p>
+            <a class="button" href="#">Read more</a>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
