@@ -178,11 +178,11 @@ html,body{margin:0;padding:0}
   .time-row{grid-template-columns:1fr}
   .time-when{justify-self:start}
 }
-/* ===== Mobile Nav Sheet (fix) ===== */
+
 @media (max-width:760px){
   .nav{
     position: relative;
-    grid-template-columns: 1fr auto;   /* brand left, hamburger right */
+    grid-template-columns: 1fr auto;
   }
 
   .hamburger{
@@ -193,10 +193,9 @@ html,body{margin:0;padding:0}
     z-index: 50;
   }
 
-  /* Turn the menu into a floating sheet */
   .nav-links{
     position: absolute;
-    top: 56px;               /* below header */
+    top: 56px;
     left: 12px;
     right: 12px;
     border-radius: 18px;
@@ -209,7 +208,6 @@ html,body{margin:0;padding:0}
     box-shadow: 0 12px 26px rgba(15,27,36,.12);
     z-index: 40;
 
-    /* hide by default */
     display: block;
     max-height: 0;
     overflow: hidden;
@@ -218,15 +216,13 @@ html,body{margin:0;padding:0}
     transition: max-height .25s ease, opacity .18s ease, transform .18s ease;
   }
 
-  /* Reveal when toggled */
   #menu-toggle:checked + .hamburger + .nav-links{
-    max-height: 420px;      /* enough for your links */
+    max-height: 420px;
     opacity: 1;
     transform: translateY(0);
     padding: 6px;
   }
 
-  /* Make each link a big tap target with separators */
   .nav-links a{
     display:block;
     padding: 14px 16px;
