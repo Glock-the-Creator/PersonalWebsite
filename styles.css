@@ -178,3 +178,72 @@ html,body{margin:0;padding:0}
   .time-row{grid-template-columns:1fr}
   .time-when{justify-self:start}
 }
+/* ===== Mobile Nav Sheet (fix) ===== */
+@media (max-width:760px){
+  .nav{
+    position: relative;
+    grid-template-columns: 1fr auto;   /* brand left, hamburger right */
+  }
+
+  .hamburger{
+    display:grid;
+    background: rgba(255,255,255,.9);
+    border: 1px solid var(--stroke);
+    box-shadow: 0 4px 10px rgba(15,27,36,.08);
+    z-index: 50;
+  }
+
+  /* Turn the menu into a floating sheet */
+  .nav-links{
+    position: absolute;
+    top: 56px;               /* below header */
+    left: 12px;
+    right: 12px;
+    border-radius: 18px;
+    padding: 0;
+    gap: 0;
+    background: rgba(255,255,255,.96);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    backdrop-filter: blur(10px) saturate(120%);
+    border: 1px solid var(--stroke);
+    box-shadow: 0 12px 26px rgba(15,27,36,.12);
+    z-index: 40;
+
+    /* hide by default */
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: max-height .25s ease, opacity .18s ease, transform .18s ease;
+  }
+
+  /* Reveal when toggled */
+  #menu-toggle:checked + .hamburger + .nav-links{
+    max-height: 420px;      /* enough for your links */
+    opacity: 1;
+    transform: translateY(0);
+    padding: 6px;
+  }
+
+  /* Make each link a big tap target with separators */
+  .nav-links a{
+    display:block;
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin: 4px;
+    border: 1px solid transparent;
+    color: var(--text);
+  }
+  .nav-links a + a{
+    border-top: 1px solid var(--stroke);
+    border-radius: 12px;
+  }
+  .nav-links a:hover,
+  .nav-links a:focus{
+    border-color: rgba(0,157,255,.28);
+    background: rgba(0,157,255,.10);
+    box-shadow: 0 0 0 3px rgba(116,202,255,.22) inset;
+    color: #0f1b24;
+  }
+}
