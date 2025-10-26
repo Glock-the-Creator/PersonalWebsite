@@ -35,7 +35,7 @@ html,body{ margin:0; padding:0; }
   padding:6px 10px; border-radius:8px; z-index:100;
 }
 
-/* Header */
+
 .site-header{
   position:sticky; top:0; z-index:20;
   background:linear-gradient(180deg, rgba(18,24,38,.88), rgba(18,24,38,.6));
@@ -51,7 +51,6 @@ html,body{ margin:0; padding:0; }
   padding:12px 0;
 }
 
-/* Brand fix: remove underline and default link color */
 .brand{
   font-weight:700;
   letter-spacing:.2px;
@@ -92,7 +91,7 @@ html,body{ margin:0; padding:0; }
   color:var(--accent);
 }
 
-/* Main */
+
 .content{
   padding:30px 0 56px;
   display:grid;
@@ -126,7 +125,7 @@ html,body{ margin:0; padding:0; }
   border-radius:999px; background:var(--panel-2); color:var(--text);
 }
 
-/* Projects */
+
 .project{
   display:grid; grid-template-columns: 260px 1fr; gap:16px;
   border:1px solid var(--stroke); border-radius:12px; padding:14px; background:var(--panel-2);
@@ -139,7 +138,7 @@ html,body{ margin:0; padding:0; }
 .rounded{ border-radius:16px; }
 .project-body p{ margin:.35rem 0 .5rem; color:var(--muted); }
 
-/* Experience */
+
 .timeline{ display:grid; gap:16px; margin-top:6px; }
 .time-row{ display:grid; grid-template-columns: 150px 1fr; gap:16px; align-items:start; }
 .time-when{
@@ -148,7 +147,7 @@ html,body{ margin:0; padding:0; }
 }
 .time-body p{ color:var(--muted); margin:.35rem 0 0; }
 
-/* Blogs (image + text, placeholders) */
+
 .blog-list{ display:grid; gap:16px; }
 .blog{
   display:grid; grid-template-columns: 200px 1fr; gap:16px;
@@ -166,7 +165,7 @@ html,body{ margin:0; padding:0; }
 }
 .button:hover{ filter:brightness(1.06); }
 
-/* Footer */
+
 .footer{
   margin:8px auto 32px;
   background:var(--panel);
@@ -176,7 +175,7 @@ html,body{ margin:0; padding:0; }
 }
 .footer a{ color:var(--accent); }
 
-/* Responsive */
+
 @media (max-width: 1000px){
   .columns{ grid-template-columns: 1fr; }
   .project{ grid-template-columns: 220px 1fr; }
