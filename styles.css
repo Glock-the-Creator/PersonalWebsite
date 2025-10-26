@@ -21,8 +21,8 @@ html,body{margin:0;padding:0}
   line-height:1.6;
   color:var(--text);
   background:
-    radial-gradient(1100px 700px at 50% 0%, rgba(255,255,255,.9) 0%, rgba(255,255,255,0) 65%) no-repeat,
-    linear-gradient(180deg, #ffffff 0%, #e9f6ff 100%) no-repeat !important;
+  radial-gradient(1200px 800px at 50% 0%, rgba(255,255,255,.85) 0%, rgba(180,215,255,.25) 60%, rgba(180,215,255,0) 85%) no-repeat,
+  linear-gradient(180deg, #ffffff 0%, #d3ebff 45%, #b5dbff 100%) no-repeat !important;
   display:grid;
   grid-template-rows:auto 1fr auto;
   min-height:100svh;
