@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mason Glocksine — Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body class="page">
 
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Header-->
   <header class="site-header">
     <nav class="nav container" aria-label="Primary">
       <a class="brand" href="#about" aria-label="Home">Mason<span>Glocksine</span></a>
@@ -30,10 +29,7 @@
     </nav>
   </header>
 
-  <!-- Main content -->
   <main id="main" class="content container" role="main">
-
-    <!-- HERO / ABOUT -->
     <section id="about" class="card">
       <h1 class="title">Hey, I’m Mason.</h1>
       <p class="lead">
@@ -41,19 +37,11 @@
         I love building delightful experiences—recently deep into WPF, .NET, and device integration.
       </p>
       <div class="columns">
-        <p>
-          Beyond code, I’m a dog dad (Daisy &amp; Sophie), middle sibling, and lifelong tinkerer. I value
-          accessibility, performance, and crafting interfaces that feel intuitive from the first click.
-        </p>
-        <p>
-          On campus and at work, I gravitate toward projects with measurable impact: faster workflows,
-          clearer visuals, and fewer clicks. I’m currently iterating on media players, weather dashboards,
-          and photo utilities.
-        </p>
+        <p>Beyond code, I’m a dog dad (Daisy &amp; Sophie), middle sibling, and lifelong tinkerer. I value accessibility, performance, and crafting interfaces that feel intuitive from the first click.</p>
+        <p>On campus and at work, I gravitate toward projects with measurable impact: faster workflows, clearer visuals, and fewer clicks. I’m currently iterating on media players and photo utilities.</p>
       </div>
     </section>
 
-    <!-- EDUCATION -->
     <section id="education" class="card">
       <h2>Education</h2>
       <ul class="list">
@@ -63,60 +51,21 @@
       </ul>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="card">
       <h2>Projects</h2>
 
       <article class="project">
         <figure class="project-media">
-          <img src="Screenshot 2025-10-05 094639.png" alt="Musaic UI preview" />
+          <img class="rounded" src="Screenshot 2025-10-05 094639.png" alt="Musaic UI preview" />
         </figure>
         <div class="project-body">
           <h3>Musaic / Bar</h3>
-          <p>
-            A Spotify-style desktop player built in VB and C# with LibVLCSharp and yt-dlp integration.
-            Focus on buttery UI, instant previews, and resilient downloads.
-          </p>
-          <ul class="tags">
-            <li>.NET</li><li>WPF</li><li>LibVLC</li><li>yt-dlp</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="project">
-        <figure class="project-media">
-          <img src="assets/photo-friendly.png" alt="Photo Friendly app concept" />
-        </figure>
-        <div class="project-body">
-          <h3>Photo Friendly</h3>
-          <p>
-            A Windows utility for importing, deduping, and organizing iPhone photos into date-based
-            folders with optional HEIC→JPEG conversion and reconciliation logs.
-          </p>
-          <ul class="tags">
-            <li>C#</li><li>WinUI/WPF</li><li>ImageMagick</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="project">
-        <figure class="project-media">
-          <img src="assets/bay-county-weather.png" alt="Bay County Weather web app preview" />
-        </figure>
-        <div class="project-body">
-          <h3>Bay County Weather</h3>
-          <p>
-            Responsive web app with live radar, hourly &amp; 7-day forecasts, and dynamic backgrounds.
-            Built for fast glanceability and local relevance.
-          </p>
-          <ul class="tags">
-            <li>HTML</li><li>CSS</li><li>JS</li>
-          </ul>
+          <p>A Spotify-style desktop player built in VB and C# with LibVLCSharp and yt-dlp integration. Focus on buttery UI, instant previews, and resilient downloads.</p>
+          <ul class="tags"><li>.NET</li><li>WPF</li><li>LibVLC</li><li>yt-dlp</li></ul>
         </div>
       </article>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="card">
       <h2>Experience</h2>
       <div class="timeline">
@@ -124,69 +73,52 @@
           <div class="time-when">2025 — Present</div>
           <div class="time-body">
             <h3>SAMSA Inc. — IT Tech</h3>
-            <p>
-              Support, troubleshooting, and small internal tools. Emphasis on pragmatic fixes and
-              quality-of-life scripting. <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em>
-            </p>
+            <p>Support, troubleshooting, and small internal tools. Emphasis on pragmatic fixes and quality-of-life scripting.</p>
           </div>
         </div>
         <div class="time-row">
           <div class="time-when">2019 — 2022</div>
           <div class="time-body">
             <h3>FIRST Robotics — Team Member</h3>
-            <p>
-              Electrical &amp; programming subteams; rapid prototyping and collaborative problem-solving.
-              <em>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
-            </p>
+            <p>Electrical &amp; programming subteams; rapid prototyping and collaborative problem-solving.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BLOGS -->
     <section id="blogs" class="card">
       <h2>Blogs</h2>
 
       <div class="blog-list">
         <article class="blog">
           <figure class="blog-media">
-            <img src="assets/blog-1.jpg" alt="Abstract UI shapes" />
+            <img src="https://picsum.photos/seed/ui/420/260" alt="Placeholder image 1" />
           </figure>
           <div class="blog-content">
-            <h3>Designing for Feel: Micro-interactions in WPF</h3>
-            <p>
-              Micro-interactions turn good apps into great ones—hover states, progress shimmer,
-              and subtle easing curves. <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor.</em>
-            </p>
+            <h3>Blog Post Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at magna risus. Nulla facilisi. Suspendisse potenti. Cras eu nibh nec lacus efficitur eleifend.</p>
             <a class="button" href="#">Read more</a>
           </div>
         </article>
 
         <article class="blog">
           <figure class="blog-media">
-            <img src="assets/blog-2.jpg" alt="Code editor screenshot" />
+            <img src="https://picsum.photos/seed/code/420/260" alt="Placeholder image 2" />
           </figure>
           <div class="blog-content">
-            <h3>Streaming Audio: LibVLC + yt-dlp Tips</h3>
-            <p>
-              From fast previews to stable downloads: connection handling, caching, and smart UI
-              fallbacks. <em>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</em>
-            </p>
+            <h3>Another Blog Title</h3>
+            <p>Quisque commodo, est a euismod dapibus, libero nibh dictum tortor, vitae interdum tortor justo vitae nunc. Donec ornare lorem sit amet massa cursus, id congue ex finibus.</p>
             <a class="button" href="#">Read more</a>
           </div>
         </article>
 
         <article class="blog">
           <figure class="blog-media">
-            <img src="assets/blog-3.jpg" alt="Weather radar visualization" />
+            <img src="https://picsum.photos/seed/weather/420/260" alt="Placeholder image 3" />
           </figure>
           <div class="blog-content">
-            <h3>Weather at a Glance: Visual Hierarchy</h3>
-            <p>
-              Making hourly forecasts scannable with contrast, spacing, and iconography.
-              <em>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</em>
-            </p>
+            <h3>Sample Placeholder Entry</h3>
+            <p>Morbi bibendum, elit a pulvinar finibus, arcu felis sagittis enim, nec tempus arcu magna id arcu. Sed feugiat, nulla id fermentum consectetur, lacus nunc venenatis mi.</p>
             <a class="button" href="#">Read more</a>
           </div>
         </article>
@@ -195,9 +127,7 @@
   </main>
 
   <footer class="footer container">
-    <small>
-      Instagram: <a href="https://www.instagram.com/mglock_15/" target="_blank" rel="noopener">mglock_15</a>
-    </small>
+    <small>Instagram: <a href="https://www.instagram.com/mglock_15/" target="_blank" rel="noopener">mglock_15</a></small>
   </footer>
 </body>
 </html>
